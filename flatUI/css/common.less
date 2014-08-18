@@ -1,0 +1,84 @@
+@import "variables";
+@import "mixin";
+
+.logo {
+  .square(50px)
+}
+
+section p {
+  text-indent: 2em;
+}
+
+.content {
+  margin-top: 70px;
+}
+
+.navbar-brand {
+  padding: 0 10px;
+}
+
+.article {
+  .article-info {
+    color: #999;
+  }
+  section {
+    margin-top: 50px;
+    p {
+      text-indent: 2em;
+    }
+  }
+  section.article-content {
+    p {
+      text-indent: 0;
+      margin-bottom: 20px;
+    }
+  }
+  .recorder {
+    a {
+      margin-left: 4px;
+    }
+  }
+  .record-time {
+    margin-left: 10px;
+  }
+  .words {
+    margin-left: 10px;
+  }
+  .read-num {
+    margin-left: 10px;
+  }
+  .article-action{
+    color:@pumpkin ;
+    float: right;
+    .glyphicon{
+      line-height: 27px;
+      cursor: pointer;
+    }
+  }
+}
+.aside{
+  section{
+    margin-bottom: 30px;
+    h2{
+      margin-bottom: 20px;
+    }
+  }
+  .work-pic{
+    img{
+      max-width: 100%;
+    }
+  }
+  .work-tags{
+    a.btn{
+      padding: 8px 12px;
+      margin-right:10px ;
+    }
+  }
+
+}
+
+//----------------
+//登录
+.login-screen{
+ min-height: 100%;
+}

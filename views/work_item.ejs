@@ -1,0 +1,65 @@
+<% include header.html %>
+<header class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#"><img class="logo" src="../flatUI/images/zhe_logo.gif" width="243" height="243">
+            </a>
+        </div>
+        <nav class="nav navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#">涵纳</a></li>
+                <li class="active"><a href="#">名诗</a></li>
+                <li><a href="#">名书</a></li>
+                <li><a href="#">名词</a></li>
+                <li><a href="#">名乐</a></li>
+                <li><a href="#">名曲</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="container content">
+    <div class="col-sm-8">
+        <article class="article">
+            <header>
+                <div class="article-info">
+                   <span class="recorder">录入by <a href="#">江南一叶</a></span>
+                   <span class="record-time">于 <%=work.uploadDate%></span>
+                   <span class="words">字数：35</span>
+                   <span class="read-num">阅览次数：5</span>
+                </div>
+                <h1 class="h3 text-center"><%=work.name%></h1>
+            </header>
+            <section class="text-center">
+                <p>水光潋滟晴方好，</p>
+
+                <p>山色空蒙雨亦奇。</p>
+
+                <p>欲把西湖比西子，</p>
+
+                <p>淡妆浓抹总相宜。</p>
+            </section>
+            <section>
+                <h2 class="h4">【作品评述】</h2>
+
+                <p>
+                    这首小诗前两句是描写：写晴天的水、雨天的山，从两种地貌、两种天气表现西湖山水风光之美和晴雨多变的特征，写得具体、传神，具有高度的艺术概括性，以致有人评论说，古来多少西湖诗全被这两句扫尽了。后两句是比喻：天地之间，人类最灵；人类之中，西子最美。在前两句描写的基础上，把西湖比做美女西施，说它和西施一样同为天下灵与美的极至，何况又经过或淡妆或浓抹的精心打扮呢！
+                </p>
+            </section>
+        </article>
+    </div>
+    <aside class="col-sm-4">
+        <section>
+            <h2 class="h4">作品背景</h2>
+            <p>无<p>
+        </section>
+        <section class="work-author">
+            <h2 class="h4">作者生平</h2>
+
+            <p>
+                苏轼（1037年1月8日—1101年8月24日），字子瞻，又字和仲，号东坡居士，宋代重要的文学家，宋代文学最高成就的代表。汉族，北宋眉州眉山（今属四川省眉山市）人。嘉祐（宋仁宗年号，1056～1063）进士”。其文汪洋姿势，豪迈奔放，与韩愈并称“韩潮苏海”。其诗题材广阔，清新豪健，善用夸张比喻，独具风格，与黄庭坚并称“苏黄”。词开豪放一派，与辛弃疾同是豪放派代表，并称“苏辛”。 又工书画。有《东坡七集》、《东坡易传》、《东坡乐府》等。
+            </p>
+        </section>
+    </aside>
+</div>
+
+<% include footer.html %>
