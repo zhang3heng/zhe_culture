@@ -3,7 +3,10 @@ var fs = require("fs"),
     path = require('path'),
     inspect = require('util').inspect,
     os = require('os'),
-    Busboy = require("busboy"),
+    Busboy = require("busboy");
+
+    const Moment = require('moment');
+
     UPLOAD_DIR = "./upload/";
 
 var pool = mysql.createPool({
@@ -11,7 +14,7 @@ var pool = mysql.createPool({
     database: 'zhe',
     port: '3306',
     user: 'root',
-    password: ''
+    password: 'root'
 })
 
 work = {
@@ -27,7 +30,7 @@ work = {
 
 //作品上传
 exports.upload = function (req, res) {
-    var busboy = new Busboy({ headers: req.headers });
+    var busboy = new Busboy({headers: req.headers});
     var uploadFilePath = null;
 
     busboy.on('file', function (fieldname, file, filename, encoding, mimetype) {
@@ -52,12 +55,14 @@ exports.upload = function (req, res) {
     })
 
     busboy.on('finish', function () {
-        console.log(work);
+
         var status = false;
         pool.getConnection(function (error, conn) {
             if (error) {
                 return;
             }
+            work.uploadDate = Moment().format('YYYY-MM-DD HH:mm:ss');
+            console.log(work);
             var sql = "insert into work set ?"
             conn.query(sql, work, function (err, result) {
                 if (err) {

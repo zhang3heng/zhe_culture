@@ -5,7 +5,7 @@ var pool = mysql.createPool({
     database: 'zhe',
     port: '3306',
     user: 'root',
-    password: ''
+    password: 'root'
 })
 /*用户登录*/
 exports.login = function (req, res) {

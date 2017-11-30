@@ -6,6 +6,6 @@ exports.pool=function(){
         database: 'zhe',
         port: '3306',
         user: 'root',
-        password: ''
+        password: 'root'
     })
 }

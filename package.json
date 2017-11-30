@@ -2,6 +2,12 @@
   "name": "zhe",
   "version": "0.0.1",
   "dependencies": {
-    "connect": "~2.14.4"
+    "busboy": "^0.2.14",
+    "connect": "~2.14.4",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "jade": "^1.11.0",
+    "moment": "^2.19.3",
+    "mysql": "^2.15.0"
   }
 }
