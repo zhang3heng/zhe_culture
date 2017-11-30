@@ -29,6 +29,7 @@ app.use(function (err, req, res, next) {
     console.error(err.stack);
     res.send(500, '服务器端错误');
 })
+
 /*设置404错误页面*/
 app.use(function (req, res, next) {
     res.send(404, '访问的资源不存在');
